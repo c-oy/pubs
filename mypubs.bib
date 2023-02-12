@@ -1,3 +1,17 @@
+@Article{agronomy12123160,
+AUTHOR = {Ouyang, Chen and Hatsugai, Emiko and Shimizu, Ikuko},
+TITLE = {Tomato Disease Monitoring System Using Modular Extendable Mobile Robot for Greenhouses: Automatically Reporting Locations of Diseased Tomatoes},
+JOURNAL = {Agronomy},
+VOLUME = {12},
+YEAR = {2022},
+NUMBER = {12},
+ARTICLE-NUMBER = {3160},
+URL = {https://www.mdpi.com/2073-4395/12/12/3160},
+ISSN = {2073-4395},
+ABSTRACT = {Based on the appearance of tomatoes, it is possible to determine whether they are diseased. Detecting diseases early can help the yield losses of tomatoes through timely treatment. However, human visual inspection is expensive in terms of the time and labor required. This paper presents an automatic tomato disease monitoring system using modular and extendable mobile robot we developed in a greenhouse. Our system automatically monitors whether tomatoes are diseased and conveys the specific locations of diseased tomatoes to users based on the location information of the image data collected by the robot, such that users can adopt timely treatment. This system consists of two main parts: a modular, extendable mobile robot that we developed and a server that runs a tomato disease detection program. Our robot is designed to be configured and extended according to the actual height of the tomato vines, thus ensuring that the monitoring range covers most tomatoes. It runs autonomously between two rows of tomato plants and collects the image data. In addition to storing the image data of tomatoes, the data server runs a program for detecting diseases. This program contains a two-level disease detection model: a detection network for detecting diseased tomatoes and a validation network for verifying the detection results. The validation network verifies the results of the detection network by classifying the outputs of the detection network, thus reducing the false positive rate of the proposed system. Experimentally, this work focuses on the blossom-end rot of tomatoes. In this paper, YOLOv5, YOLOv7, Faster R-CNN, and RetinaNet are trained and compared on datasets divided by different conditions. YOLOv5l showed the best results on the randomly divided dataset: the mAP@0.5 reached 90.4%, and the recall reached 85.2%. Through the trained YOLOv5l, a dataset was created for training the classification networks: ResNet, MobileNet, and DenseNet. MobileNetv2 achieved the best overall performance with a 96.7% accuracy and a size of 8.8 MB. The final deployment to the system included YOLOv5l and MobileNetv2. When the confidence threshold of YOLOv5l was set to 0.1, the two-level model&rsquo;s false positive and false negative rates were 13.3% and 15.2%, respectively. Compared to using YOLOv5l alone, the false positive rate decreased by 5.7% and the false negative rate increased by only 2.3%. The results of the actual operation of the proposed system reveal that the system can inform the user of the locations of diseased tomatoes with a low rate of false positives and false negatives, and that it is an effective and promotable approach.},
+DOI = {10.3390/agronomy12123160}
+}
+
 @INPROCEEDINGS{9959384,
   author={Ouyang, Chen and Hatsugai, Emiko and Shimizu, Ikuko},
   booktitle={2022 International Conference on Advanced Robotics and Mechatronics (ICARM)}, 
